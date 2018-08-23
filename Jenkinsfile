@@ -4,7 +4,7 @@ pipeline {
     stage('Analyse') {
       agent {
         docker {
-          image 'dsop/sonarqube-scanner'
+          image 'newtmitch/sonar-scanner'
           args '--entrypoint=""'
         }
       }
