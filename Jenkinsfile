@@ -9,7 +9,7 @@ pipeline {
         }
       }
       steps {
-        sh 'sonar-scanner -Dsonar.projectKey=monproj -Dsonar.sources=. -Dsonar.host.url=http://172.28.21.67:9000 -Dsonar.login=c9cc31a0b1d774b4252691b7322ec195cb3aa141'
+        sh 'sonar-scanner -Dsonar.projectKey=monproj -Dsonar.sources=. -Dsonar.host.url=http://172.28.21.67:9000 -Dsonar.login=c9cc31a0b1d774b4252691b7322ec195cb3aa141 --privileged=true'
       }
     }
   }
