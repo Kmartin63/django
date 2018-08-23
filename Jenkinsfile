@@ -6,6 +6,7 @@ pipeline {
         docker {
           image 'dsop/sonarqube-scanner'
           args '--entrypoint=""'
+            args '--privileged=true'
         }
       }
       steps {
